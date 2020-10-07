@@ -14,7 +14,7 @@ public class Main {
         menuJeu = scanner.next();
         System.out.println("2- Pour lire les règles écris : règles");
         menuRègle = scanner.next();
-
+        System.out.println("c'est moi");
 
     }
 }
