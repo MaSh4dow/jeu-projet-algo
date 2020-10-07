@@ -16,6 +16,29 @@ public class Fonction_Menu {
         System.out.println("    -0 Quitter le jeu"); // Tape 0 si il veut quitter le jeu
 
         choixMenuPrincipal = scanner.nextLine(); // Choix de l'utilisateur
-    }
 
+        while (!(choixMenuPrincipal.equals("1") || choixMenuPrincipal.equals("2") || choixMenuPrincipal.equals("0"))){ // Si la saisie du choix est incorrecte
+            System.out.println("Votre saisie est incorrecte. Tapez le chiffre correspondant en fonction de ce que vous voulez faire");
+            System.out.println();
+            System.out.println("    -1 Jouer");
+            System.out.println("    -2 Voir les règles");
+            System.out.println("    -0 Quitter le jeu");
+
+            choixMenuPrincipal = scanner.nextLine();
+        }
+
+        if (choixMenuPrincipal.equals("1")) {
+            //Implémenter la fonction pour jouer
+            System.out.println("Les règles sont simples ! ");
+        }
+        else if (choixMenuPrincipal.equals("2")) {
+            //Implémenter la fonction pour afficher les règles
+            Fonction.regles();
+        }
+        else if (choixMenuPrincipal.equals("0")) {
+            System.out.println("Quitter le jeu");
+        }
+
+    }
 }
+
